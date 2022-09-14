@@ -1,0 +1,28 @@
+h1{
+ font-family: 'Open Sans', sans-serif;
+ font-size: 3rem;
+ text-align: center;
+}
+
+.gallery{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.gallery div{
+ flex-grow: 1;
+ margin: 3px;
+ overflow: hidden; /*resim büyürkenki taşmayı kapattırdık */
+}
+
+img {
+ width: 100%;
+ height: 100%;/*img ye genişliğini ve yüksekliğini içerisinde bulunduğun containera göre ayarla demiş olduk  */
+ transition: transform .3s ease-out; /* boyutlandırma efekti yaptık*/
+ object-fit: cover; /* resmi divin içerisine nasıl yerleştireceğiz onu yapar*/
+}
+
+
+img:hover {
+ transform: scale(1.2);
+} /* her bir resmin üzerine geldiğiimizde resmi 1.2 oranında büyütür*/
