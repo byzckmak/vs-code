@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  * {box-sizing: border-box;}
+  html{height: 2000px;}
+  body { margin: 0; }
+  .box {
+      padding: 10px;
+      border: 5px solid #2a9d8f;
+      margin: 5px;
+  }
+  .navbar {
+     background: #e9c46a;
+     position: fixed;
+     width: 100%;
+     /*z-index: -1; */
+     top: 0; /* navbarı tepeye sabitledik*/
+    }
+  .content {
+     background: #f4a261;
+    margin-top: 60px; }
+  .footer { 
+      background: #e76f51;
+      position: fixed; 
+     /* bottom: 0; */ 
+      width: 100%;
+      bottom: 0;
+   }
+   .container1{
+    position: relative;
+    margin-top: 100px;
+   }
+</style>
+</head>
+<body>
+
+<div id="container1">
+  <div class="box navbar">Navbar</div>
+  <div class="box content">Content</div>
+  <div class="box footer">Footer</div>
+</div>
+
+</body>
+</html>
